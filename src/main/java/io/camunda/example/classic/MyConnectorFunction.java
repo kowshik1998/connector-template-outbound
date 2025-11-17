@@ -1,12 +1,12 @@
-package io.camunda.example;
+package io.camunda.example.classic;
 
 import io.camunda.connector.api.annotation.OutboundConnector;
 import io.camunda.connector.api.error.ConnectorException;
 import io.camunda.connector.api.outbound.OutboundConnectorContext;
 import io.camunda.connector.api.outbound.OutboundConnectorFunction;
 import io.camunda.connector.generator.java.annotation.ElementTemplate;
-import io.camunda.example.dto.MyConnectorRequest;
-import io.camunda.example.dto.MyConnectorResult;
+import io.camunda.dto.MyConnectorRequest;
+import io.camunda.dto.MyConnectorResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,8 +22,8 @@ import org.slf4j.LoggerFactory;
     icon = "icon.svg",
     documentationRef = "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/available-connectors-overview/",
     propertyGroups = {
-      @ElementTemplate.PropertyGroup(id = "authentication", label = "Authentication"),
-      @ElementTemplate.PropertyGroup(id = "compose", label = "Compose")
+        @ElementTemplate.PropertyGroup(id = "authentication", label = "Authentication"),
+        @ElementTemplate.PropertyGroup(id = "compose", label = "Compose")
     },
     inputDataClass = MyConnectorRequest.class)
 public class MyConnectorFunction implements OutboundConnectorFunction {
