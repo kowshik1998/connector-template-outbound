@@ -25,7 +25,7 @@ Connector. You can choose the approach that best fits your needs:
 
 ## Classic API - `OutboundConnectorFunction`
 
-Example implementation: [`io.camunda.example.classic.MyConnectorFunction`](src/main/java/io/camunda/example/classic/MyConnectorFunction.java).
+Example implementation: [`io.camunda.example.classic.ConcatenationConnectorFunction`](src/main/java/io/camunda/example/classic/MyConnectorFunction.java).
 
 This approach utilizes the traditional `OutboundConnectorFunction` interface from the Connector SDK.
 

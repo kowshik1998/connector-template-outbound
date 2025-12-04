@@ -126,7 +126,7 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+     <!-- <plugin>
         <groupId>io.camunda.connector</groupId>
         <artifactId>element-template-generator-maven-plugin</artifactId>
         <version>${version.connectors}</version>
@@ -141,7 +141,7 @@
         <configuration>
           <connectors>
             <connector>
-              <connectorClass>io.camunda.example.classic.MyConnectorFunction</connectorClass>
+              <connectorClass>io.camunda.example.classic.ConcatenationConnectorFunction</connectorClass>
               <files>
                 <file>
                   <templateId>io.camunda.connector.Template.v1</templateId>
@@ -160,7 +160,7 @@
             </connector>
           </connectors>
         </configuration>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 
